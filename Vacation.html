@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>An Adventure with Objects</title>
+
+    <script src="Vacation.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Bellota|Bellota+Text&display=swap" rel="stylesheet">
+    <link href="Vacation.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <center>
+                <h1> Trip Go !</h1>
+            </center>
+        </header>
+
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+        <!--Details of first hotel with image.-->
+
+        <center>
+            <div>
+                <img src="img1.jpg" alt="Hotel" height="259" width="259">
+                <p>
+                    <li> Name - Chelsea Hotel </li>
+                    <div>
+                        <li> Location - Toronto </li>
+                    </div>
+                    <div>
+                        <li> Price - $179 </li>
+                    </div>
+                    <div>
+                        <li>description - Best hotel with best rooms and a great view.</li>
+                    </div>
+                    &nbsp &nbsp
+
+                    <!--Added button so when user click it he/she can see the details-->
+
+                    <div>
+
+                        <button onclick="myFunction()">Click me for more INFO</button>
+
+                        <p id="h1"></p>
+
+                    </div>
+                    <div>
+
+                        <button onclick="A1Function()">Click me to see Availability</button>
+
+                        <p id="h3"></p>
+
+                    </div>
+                </p>
+
+            </div>
+        </center>
+
+        &nbsp &nbsp &nbsp
+
+        <!--Details of second  hotel with image.-->
+        <center>
+            <div>
+                <img src="img2.jpg" alt="Hotel" height="259" width="259">
+                <p>
+                    <li> Name - Delux Inn Hotel</li>
+                    <div>
+                        <li> Location - Toronto </li>
+                    </div>
+                    <div>
+                        <li>Price - $150</li>
+                    </div>
+                    <div>
+                        <li>description - Good hotel with best rooms and great facilities.</li>
+                    </div>
+                    &nbsp &nbsp
+                    <!--Added button so when user click it he/she can see the details-->
+
+                    <div>
+
+                        <button onclick="Function()">Click me for more INFO</button>
+
+                        <p id="h2"></p>
+
+                    </div>
+
+                    <div>
+
+                        <button onclick="getPrice()">
+                            Special offer! Click to get discount.
+                        </button>
+                        <br>
+                        <br>
+                        <input readonly id="total">
+                        <p id="to"></p>
+
+                    </div>
+                </p>
+
+                <div>
+
+                    <button onclick="A2Function()">Click me to see Availability</button>
+
+                    <p id="h4"></p>
+
+                </div>
+
+            </div>
+        </center>
+
+        &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp
+
+        <footer>
+            <p> COMP1073 - Module 3 Project An Adventure with Objects </p>
+            <p> Group Members - Krens Patel (200427063) , Jay Patel(200426940) </p>
+        </footer>
+    </div>
+</body>
+
+</html>
