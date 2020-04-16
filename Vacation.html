@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <meta charset="utf-8" />
     <title>An Adventure with Objects</title>
 
     <script src="Vacation.js" async></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJF_Q3RS6ckzTlqRrHJ1jltHAayZ14Izc&callback=initMap" async defer></script>
     <link href="https://fonts.googleapis.com/css?family=Bellota|Bellota+Text&display=swap" rel="stylesheet">
     <link href="Vacation.css" rel="stylesheet">
 </head>
 
 <body>
+    <button> Click to see the location</button>
+    <p> </p>
+
+    <article class="container">
+        <div id="map"></div>
+    </article>
+
     <div class="container">
 
         <header>
@@ -28,33 +38,35 @@
                 <img src="img1.jpg" alt="Hotel" height="259" width="259">
                 <p>
                     <li> Name - Chelsea Hotel </li>
-                    <div>
-                        <li> Location - Toronto </li>
-                    </div>
-                    <div>
-                        <li> Price - $179 </li>
-                    </div>
-                    <div>
-                        <li>description - Best hotel with best rooms and a great view.</li>
-                    </div>
-                    &nbsp &nbsp
+                <div>
+                    <li> Location - Toronto </li>
+                </div>
+                <div>
+                    <li> Price - $179 </li>
+                </div>
+                <div>
+                    <li>description - Best hotel with best rooms and a great view.</li>
+                </div>
+                &nbsp &nbsp
 
-                    <!--Added button so when user click it he/she can see the details-->
+                <!--Added button so when user click it he/she can see the details-->
 
-                    <div>
+                <div>
 
-                        <button onclick="myFunction()">Click me for more INFO</button>
+                    <button onclick="myFunction()">Click me for more INFO</button>
 
-                        <p id="h1"></p>
+                    <p id="h1"></p>
 
-                    </div>
-                    <div>
+                </div>
+                <div>
 
-                        <button onclick="A1Function()">Click me to see Availability</button>
+                    <button onclick="A1Function()">Click me to see Availability</button>
 
-                        <p id="h3"></p>
+                    <p id="h3"></p>
 
-                    </div>
+
+                </div>
+
                 </p>
 
             </div>
@@ -68,42 +80,42 @@
                 <img src="img2.jpg" alt="Hotel" height="259" width="259">
                 <p>
                     <li> Name - Delux Inn Hotel</li>
-                    <div>
-                        <li> Location - Toronto </li>
-                    </div>
-                    <div>
-                        <li>Price - $150</li>
-                    </div>
-                    <div>
-                        <li>description - Good hotel with best rooms and great facilities.</li>
-                    </div>
-                    &nbsp &nbsp
-                    <!--Added button so when user click it he/she can see the details-->
+                <div>
+                    <li> Location - Toronto </li>
+                </div>
+                <div>
+                    <li>Price - $150</li>
+                </div>
+                <div>
+                    <li>description - Good hotel with best rooms and great facilities.</li>
+                </div>
+                &nbsp &nbsp
+                <!--Added button so when user click it he/she can see the details-->
 
-                    <div>
+                <div>
 
-                        <button onclick="Function()">Click me for more INFO</button>
+                    <button onclick="Function()">Click me for more INFO</button>
 
-                        <p id="h2"></p>
+                    <p id="h2"></p>
 
-                    </div>
+                </div>
 
-                    <div>
+                <div>
 
-                        <button onclick="getPrice()">
-                            Special offer! Click to get discount.
-                        </button>
-                        <br>
-                        <br>
-                        <input readonly id="total">
-                        <p id="to"></p>
+                    <button onclick="getPrice()">
+                        Special offer! Click to get discount.
+                    </button>
+                    <br>
+                    <br>
+                    <input readonly id="total">
+                    <p id="to"></p>
 
-                    </div>
+                </div>
                 </p>
 
                 <div>
 
-                    <button onclick="A2Function()">Click me to see Availability</button>
+                    <button class="availability" onclick="A2Function()">Click me to see Availability</button>
 
                     <p id="h4"></p>
 
@@ -114,11 +126,8 @@
 
         &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp
 
-        <footer>
-            <p> COMP1073 - Module 3 Project An Adventure with Objects </p>
-            <p> Group Members - Krens Patel (200427063) , Jay Patel(200426940) </p>
-        </footer>
     </div>
+
 </body>
 
 </html>

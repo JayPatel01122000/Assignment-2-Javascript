@@ -73,3 +73,44 @@ function A1Function() {
 function A2Function() {
     document.getElementById("h4").innerHTML = 'The ' + place2.name + ' Hotel is ' + place2.availability + ' for renting';
 }
+
+let para = document.querySelector('p');
+let button = document.querySelector('button');
+
+//Create a function to get the my location and use the if-else
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        para.innerHTML = '<p> Geolocation is not supported. Booo! :( ';
+    }
+}
+//create a function to give the current location and print in the browser
+function showPosition(position) {
+    para.innerHTML = '<p> Latitude is ' + position.coords.latitude +
+        ' and longitude is ' + position.coords.longitude + '</p>';
+}
+
+button.onclick = getLocation;
+
+
+//create the init function to get my location
+function initMap() {
+    let Home = {
+        lat: 44.3987291,
+        lng: -79.6776734
+    }
+    let div = document.querySelector('.container');
+
+    let map = new google.maps.Map(div, {
+        Zoom: 13,
+        center: Home
+    });
+
+    //set the marker on map
+    let marker = new google.maps.Marker({
+        position: Home,
+        map: map,
+        animation: google.maps.Animation.DROP
+    });
+}

@@ -34,20 +34,24 @@ li {
     margin-right: auto;
 }
 
+p {
+    background-color: red;
+}
+
 header {
     padding: 5px 0;
     background-color: brown;
 }
 
-footer {
-    padding: 50px 0 0 5px;
-    text-align: left;
-    background-color: brown;
+article {
+    height: 400px;
 }
 
-footer p {
-    font-size: 2.0rem;
-    color: black;
-    padding-bottom: 10px;
-    padding-top: 10px;
+/* Set the size of the div element that contains the map */
+#map {
+    width: 100%;
+    /*width of the parent - article element */
+    height: 100%;
+    /*height of the parent - article element */
+    background-color: grey;
 }
